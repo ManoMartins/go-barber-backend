@@ -12,7 +12,6 @@ export default class ProviderAppointmentsController {
     const listProviderAppointments = container.resolve(
       ListProviderAppointmentsService,
     );
-    console.log(day);
 
     const appointments = await listProviderAppointments.execute({
       provider_id,
